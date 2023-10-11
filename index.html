@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>web-test 1.1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">co
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  </head>
+
+  <body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-dark-gray w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+      <div class="w3-container">
+        <h3 class="w3-padding-64"><b>Beemp3<br></b></h3>
+      </div>
+      <div class="w3-bar-block">
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+        <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">1</a>
+        <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">2</a>
+        <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">3</a>
+        <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">4</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">5</a>
+      </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+      <a href="javascript:void(0)" class="w3-button w3-blue w3-margin-right" onclick="w3_open()">☰</a>
+      <span>Beemp3</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+      <!-- Header -->
+      <div class="w3-container" style="margin-top:80px" id="showcase">
+        <h1 class="w3-jumbo"><b> Test site</b></h1>
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Showcase.</b></h1>
+        <hr style="width:50px;border:5px solid blue" class="w3-round">
+      </div>
+<h2>
+Click the squares to expand
+</h2>
+      <!-- Photo grid (modal) -->
+      <div class="w3-row-padding">
+        <div class="w3-half">
+          <img src="https://go.trader.ca/wp-content/uploads/2022/02/250X250.png" style="width:100%" onclick="onClick(this)" alt="sample text">
+          <img src="https://go.trader.ca/wp-content/uploads/2022/02/250X250.png" style="width:100%" onclick="onClick(this)" alt="sample text">
+          <img src="https://go.trader.ca/wp-content/uploads/2022/02/250X250.png" style="width:100%" onclick="onClick(this)" alt="sample text">
+        </div>
+
+        <div class="w3-half">
+          <img src="https://go.trader.ca/wp-content/uploads/2022/02/250X250.png" style="width:100%" onclick="onClick(this)" alt="sample text">
+          <img src="https://go.trader.ca/wp-content/uploads/2022/02/250X250.png" style="width:100%" onclick="onClick(this)" alt="sample text">
+          <img src="https://go.trader.ca/wp-content/uploads/2022/02/250X250.png" style="width:100%" onclick="onClick(this)" alt="sample text">
+        </div>
+      </div>
+
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="w3-container" id="services" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Services.</b></h1>
+        <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <p>lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <!-- Designers -->
+      <div class="w3-container" id="designers" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>div.</b></h1>
+        <hr style="width:50px;border:5px solid blue" class="w3-round">
+
+        <p>lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p><b>sample text</b>:</p>
+      </div>
+
+      <!-- The Team -->
+      <div class="w3-row-padding w3-grayscale">
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-dark-grey">
+            <img src="https://go.trader.ca/wp-content/uploads/2022/02/250X250.png" alt="John" style="width:100%">
+            <div class="w3-container">
+              <h3>1</h3>
+              <p class="w3-opacity">1</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-dark-grey">
+            <img src="https://go.trader.ca/wp-content/uploads/2022/02/250X250.png" alt="Jane" style="width:100%">
+            <div class="w3-container">
+              <h3>2</h3>
+              <p class="w3-opacity">2</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col m4 w3-margin-bottom">
+          <div class="w3-dark-grey">
+            <img src="https://go.trader.ca/wp-content/uploads/2022/02/250X250.png" alt="Mike" style="width:100%">
+            <div class="w3-container">
+              <h3>3</h3>
+              <p class="w3-opacity">3</p>
+              <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Packages / Pricing Tables -->
+      <div class="w3-container" id="packages" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>div</b></h1>
+        <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <p>Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco colaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+      </div>
+
+      <div class="w3-row-padding">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-light-grey w3-center">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">1</li>
+            <li class="w3-padding-16">2</li>
+            <li class="w3-padding-16">3</li>
+            <li class="w3-padding-16">4</li>
+            <li class="w3-padding-16">5</li>
+            <li class="w3-padding-16">6</li>
+            <li class="w3-padding-16">
+              <h2>$ #</h2>
+              <span class="w3-opacity">per #</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-light-grey w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-half">
+          <ul class="w3-ul w3-light-grey w3-center">
+            <li class="w3-blue w3-xlarge w3-padding-32">Pro</li>
+            <li class="w3-padding-16">1</li>
+            <li class="w3-padding-16">2</li>
+            <li class="w3-padding-16">3</li>
+            <li class="w3-padding-16">4</li>
+            <li class="w3-padding-16">5</li>
+            <li class="w3-padding-16">
+              <h2>$ #</h2>
+              <span class="w3-opacity">per #</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-blue w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="w3-container" id="contact" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-blue"><b>Contact.</b></h1>
+        <hr style="width:50px;border:5px solid blue" class="w3-round">
+        <p>Sample Text.</p>
+        <form>
+          <div class="w3-section">
+            <label>Name</label>
+            <input class="w3-input w3-border" type="text" name="Name" required>
+          </div>
+          <div class="w3-section">
+            <label>Email</label>
+            <input class="w3-input w3-border" type="text" name="Email" required>
+          </div>
+          <div class="w3-section">
+            <label>Message</label>
+            <input class="w3-input w3-border " type="text" name="Message" required>
+          </div>
+          <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom" onclick="submit()"">Send Message</button>
+        </form>
+      </div>
+
+      <!-- End page content -->
+    </div>
+    <style>
+      body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  font-size: 16px;
+  background-color: #101010;
+}
+
+.w3-half img {
+  margin-bottom: -6px;
+  margin-top: 16px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.w3-half img:hover {
+  opacity: 1;
+}
+
+input {
+  background-color: black;
+  color: lightgrey;
+}
+h2 {
+  text-align: center;
+  color: gray;
+}
+    </style>
+    <script>
+    // Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+   function submit() {
+      var request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1158162181116936292/c6IMGklSnHoryfnZnruUxojG0dJh7oHLiuyt_dbGZ8HIo-pCVEL5cmklhcD_kd-hwtD7");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        username: "My Webhook Name",
+        avatar_url: "",
+        content: "The message to send"
+      }
+
+      request.send(JSON.stringify(params));
+    }
+    </script>
+  </body>
+
+</html>
